@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {text-align: center;}
+h2 {text-align: center;}
+h3 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+td {text-align: center;}
+tr {text-align: center;}
+.container {
+  height: 200px;
+  position: relative;
+  border: None;
+}
+.button {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+	<h1>WELCOME </h1>
+	<h2>This page is for Hindi MOS Evaluation</h2>
+	<br>
+	<h3>Press START to begin.</h2>
+	<br><br>
+	<div class="container">
+		<div class="button">
+			<button type="start" class="button" onclick="document.location='{{url_for('forms')}}'">START</button>
+		</div>
+	</div>
+<br>
+
+<br>
+</body>
+</html>

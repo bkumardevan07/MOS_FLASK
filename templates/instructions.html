@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {text-align: center;}
+h2 {text-align: center;}
+h3 {text-align: center;}
+h4 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+audio { width: 200px;
+	height: 25px;}
+<! --td {text-align: center;}
+tr {text-align: center;}-->
+</style>
+</head>
+<body>
+	<h1>Instructions</h1>
+	<h2>Hi {{ listener.first_name }}! Please give score among digits 1-5 on following perceived quality : </h2>
+<br>
+<table style="border:1px solid black;padding: 15px;margin-left:auto;margin-right:auto;">
+  <tbody>
+    <tr>
+      <td style="text-align: center"><b>Rating</b></td>
+      <td style="text-align: center"><b>Label</b></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td style="text-align: center">Excellent</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">Good</td>      
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">Fair</td>      
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">Poor</td>      
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">Bad</td>      
+    </tr>
+
+  </tbody>
+</table>
+</body>
+<body>
+    <tr>
+	    <h4><i>A <i> 'good - excellent'</i> audio can sound like ...</i></h4>
+    </tr>
+    <tr>
+	    <h4><audio src="{{ url_for('static', filename='audio_files_a/0.wav') }}" controls="" preload="auto"></audio></h4>
+	    <br><br>
+    </tr>
+    <h4>
+	    <button type="button" onclick="document.location='{{url_for('a_evaluation', id=listener.id)}}'" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+		      Start
+	    </button>
+    </h4>
+<br>
+</body>
+</html>

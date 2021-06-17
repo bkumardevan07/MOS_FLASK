@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html><head><style>
+h1 {text-align: center;}
+h2 {text-align: center;}
+h3 {text-align: center;}
+h4 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+audio { width: 200px;height: 25px;}
+</style></head>
+<form id="a_evaluation" action="/a_evaluation/{{ listener_id }}" METHOD="POST">
+<h1>Page 1/3.</h1>
+<table style="margin-left:auto;margin-right:auto;">
+  <tbody>
+    <tr>
+      <td style="text-align: center"><b>AUDIO</b></td>
+      <td style="text-align: center"><b>RATING</b></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio src={{ url_for('static', filename="audio_files_a/1.wav") }} controls="" preload=""></audio></td>
+      <td style="padding: 15px 70px;">
+		      <input type="radio" id="sample_1_option_1" name="sample_1" value=1><label for="sample_1_option_1">1</label>
+		      <input type="radio" id="sample_1_option_2" name="sample_1" value=2><label for="sample_1_option_2">2</label>
+		      <input type="radio" id="sample_1_option_3" name="sample_1" value=3 required><label for="sample_1_option_3">3</label>
+		      <input type="radio" id="sample_1_option_4" name="sample_1" value=4><label for="sample_1_option_4">4</label>
+		      <input type="radio" id="sample_1_option_5" name="sample_1" value=5><label for="sample_1_option_5">5</label>
+      </td>
+    </tr>
+    <br>
+    <tr>
+      <td style="text-align: center"><audio src={{ url_for('static', filename="audio_files_a/2.wav") }} controls="" preload=""></audio></td>
+      <td style="padding: 15px 70px;">
+		      <input type="radio" id="sample_2_option_1" name="sample_2" value=1><label for="sample_2_option_1">1</label>
+		      <input type="radio" id="sample_2_option_2" name="sample_2" value=2><label for="sample_2_option_2">2</label>
+		      <input type="radio" id="sample_2_option_3" name="sample_2" value=3 required><label for="sample_2_option_3">3</label>
+		      <input type="radio" id="sample_2_option_4" name="sample_2" value=4><label for="sample_2_option_4">4</label>
+		      <input type="radio" id="sample_2_option_5" name="sample_2" value=5><label for="sample_2_option_5">5</label>
+      </td>
+    </tr>
+    <br>
+      <td style="text-align: center"><audio src={{ url_for('static', filename="audio_files_a/3.wav") }} controls="" preload=""></audio></td>
+      <td style="padding: 15px 70px;">
+		      <input type="radio" id="sample_3_option_1" name="sample_3" value=1><label for="sample_3_option_1">1</label>
+		      <input type="radio" id="sample_3_option_2" name="sample_3" value=2><label for="sample_3_option_2">2</label>
+		      <input type="radio" id="sample_3_option_3" name="sample_3" value=3 required><label for="sample_3_option_3">3</label>
+		      <input type="radio" id="sample_3_option_4" name="sample_3" value=4><label for="sample_3_option_4">4</label>
+		      <input type="radio" id="sample_3_option_5" name="sample_3" value=5><label for="sample_3_option_5">5</label>
+      </td>
+    </tr>
+    <br>
+      <td style="text-align: center"><audio src={{ url_for('static', filename="audio_files_a/4.wav") }} controls="" preload=""></audio></td>
+      <td style="padding: 15px 70px;">
+		      <input type="radio" id="sample_4_option_1" name="sample_4" value=1><label for="sample_4_option_1">1</label>
+		      <input type="radio" id="sample_4_option_2" name="sample_4" value=2><label for="sample_4_option_2">2</label>
+		      <input type="radio" id="sample_4_option_3" name="sample_4" value=3 required><label for="sample_4_option_3">3</label>
+		      <input type="radio" id="sample_4_option_4" name="sample_4" value=4><label for="sample_4_option_4">4</label>
+		      <input type="radio" id="sample_4_option_5" name="sample_4" value=5><label for="sample_4_option_5">5</label>
+      </td>
+    </tr>
+    <br>
+      <td style="text-align: center"><audio src={{ url_for('static', filename="audio_files_a/5.wav") }} controls="" preload=""></audio></td>
+      <td style="padding: 15px 70px;">
+		      <input type="radio" id="sample_5_option_1" name="sample_5" value=1><label for="sample_5_option_1">1</label>
+		      <input type="radio" id="sample_5_option_2" name="sample_5" value=2><label for="sample_5_option_2">2</label>
+		      <input type="radio" id="sample_5_option_3" name="sample_5" value=3 required><label for="sample_5_option_3">3</label>
+		      <input type="radio" id="sample_5_option_4" name="sample_5" value=4><label for="sample_5_option_4">4</label>
+		      <input type="radio" id="sample_5_option_5" name="sample_5" value=5><label for="sample_5_option_5">5</label>
+      </td>
+    </tr>
+    <br>
+      <td style="text-align: center"><audio src={{ url_for('static', filename="audio_files_a/6.wav") }} controls="" preload=""></audio></td>
+      <td style="padding: 15px 70px;">
+		      <input type="radio" id="sample_6_option_1" name="sample_6" value=1><label for="sample_6_option_1">1</label>
+		      <input type="radio" id="sample_6_option_2" name="sample_6" value=2><label for="sample_6_option_2">2</label>
+		      <input type="radio" id="sample_6_option_3" name="sample_6" value=3 required><label for="sample_6_option_3">3</label>
+		      <input type="radio" id="sample_6_option_4" name="sample_6" value=4><label for="sample_6_option_4">4</label>
+		      <input type="radio" id="sample_6_option_5" name="sample_6" value=5><label for="sample_6_option_5">5</label>
+      </td>
+    </tr>
+    <br>
+      <td style="text-align: center"><audio src={{ url_for('static', filename="audio_files_a/7.wav") }} controls="" preload=""></audio></td>
+      <td style="padding: 15px 70px;">
+		      <input type="radio" id="sample_7_option_1" name="sample_7" value=1><label for="sample_7_option_1">1</label>
+		      <input type="radio" id="sample_7_option_2" name="sample_7" value=2><label for="sample_7_option_2">2</label>
+		      <input type="radio" id="sample_7_option_3" name="sample_7" value=3 required><label for="sample_7_option_3">3</label>
+		      <input type="radio" id="sample_7_option_4" name="sample_7" value=4><label for="sample_7_option_4">4</label>
+		      <input type="radio" id="sample_7_option_5" name="sample_7" value=5><label for="sample_7_option_5">5</label>
+      </td>
+    </tr>
+    <br>
+      <td style="text-align: center"><audio src={{ url_for('static', filename="audio_files_a/8.wav") }} controls="" preload=""></audio></td>
+      <td style="padding: 15px 70px;">
+		      <input type="radio" id="sample_8_option_1" name="sample_8" value=1><label for="sample_8_option_1">1</label>
+		      <input type="radio" id="sample_8_option_2" name="sample_8" value=2><label for="sample_8_option_2">2</label>
+		      <input type="radio" id="sample_8_option_3" name="sample_8" value=3 required><label for="sample_8_option_3">3</label>
+		      <input type="radio" id="sample_8_option_4" name="sample_8" value=4><label for="sample_8_option_4">4</label>
+		      <input type="radio" id="sample_8_option_5" name="sample_8" value=5><label for="sample_8_option_5">5</label>
+      </td>
+    </tr>
+    <br>
+      <td style="text-align: center"><audio src={{ url_for('static', filename="audio_files_a/9.wav") }} controls="" preload=""></audio></td>
+      <td style="padding: 15px 70px;">
+		      <input type="radio" id="sample_9_option_1" name="sample_9" value=1><label for="sample_9_option_1">1</label>
+		      <input type="radio" id="sample_9_option_2" name="sample_9" value=2><label for="sample_9_option_2">2</label>
+		      <input type="radio" id="sample_9_option_3" name="sample_9" value=3 required><label for="sample_9_option_3">3</label>
+		      <input type="radio" id="sample_9_option_4" name="sample_9" value=4><label for="sample_9_option_4">4</label>
+		      <input type="radio" id="sample_9_option_5" name="sample_9" value=5><label for="sample_9_option_5">5</label>
+      </td>
+    </tr>
+    <br>
+      <td style="text-align: center"><audio src={{ url_for('static', filename="audio_files_a/10.wav") }} controls="" preload=""></audio></td>
+      <td style="padding: 15px 70px;">
+		      <input type="radio" id="sample_10_option_1" name="sample_10" value=1><label for="sample_10_option_1">1</label>
+		      <input type="radio" id="sample_10_option_2" name="sample_10" value=2><label for="sample_10_option_2">2</label>
+		      <input type="radio" id="sample_10_option_3" name="sample_10" value=3 required><label for="sample_10_option_3">3</label>
+		      <input type="radio" id="sample_10_option_4" name="sample_10" value=4><label for="sample_10_option_4">4</label>
+		      <input type="radio" id="sample_10_option_5" name="sample_10" value=5><label for="sample_10_option_5">5</label>
+      </td>
+    </tr>
+    <br>
+  </tbody>
+</table>
+<body style="text-align: center">
+	<button type="submit" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                      NEXT
+            </button>
+</body>
+</form>

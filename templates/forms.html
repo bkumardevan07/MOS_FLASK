@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#h1 {text-align: center;}
+#h2 {text-align: center;}
+#h3 {text-align: center;}
+#div {text-align: center;}
+form {text-align: center;}
+</style>
+</head>
+
+<form action='/forms', method="POST">
+	<h1> Please Enter Details </h1>
+  <div class="center">
+	  <br>
+    <label for="First Name" class="form-label">First Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp", name="first_name" required>
+  </div>
+  <div class="mb-3">
+	  <br>
+    <label for="Last Name" class="form-label">Last Name</label>
+    <input type="text" class="form-control" id="exampleInputPassword1", name="last_name" required>
+  </div>
+
+  <div class="mb-3">
+	  <br>
+    <label for="Gender" class="form-label">Gender</label>
+    <input type="radio" class="form-control" id="Male", name="gender" value=0 >
+    <label for="Male" class="form-label">Male</label>
+    <input type="radio" class="form-control" id="Female", name="gender" value=1>
+    <label for="Female" class="form-label">Female</label>
+    <input type="radio" class="form-control" id="Other", name="gender" value=2 required>
+    <label for="Other" class="form-label">Other</label>
+  </div>
+  <div class='mb-3'>
+	  <br>
+	  <label for="Mother_Tongue" class="form-label">Is Hindi your mother tongue?</label> <br><br>
+    <input type="radio" class="form-control" id="mother_tongue_yes", name="mother_tongue" value=1 >
+    <label for="Yes" class="form-label">Yes</label>
+    <input type="radio" class="form-control" id="mother_tongue_no", name="mother_tongue" value=0 required>
+    <label for="No" class="form-label">No</label>
+  </div>
+  <!--<div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>-->
+  <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
